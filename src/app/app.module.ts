@@ -3,17 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppLogin } from './login/login.component';
-import { AppHome } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeModule } from './home/home.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppLogin,
-    AppHome
   ],
   imports: [
     BrowserModule,
+    HomeModule,
+    PagesModule,
     AppRoutingModule
   ],
   providers: [],
